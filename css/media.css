@@ -1,0 +1,152 @@
+@media screen and (max-width: 1315px) {
+  .why__col-right {
+    z-index: 1;
+    position: relative;
+  }
+}
+@media screen and (max-width: 992px) {
+  .why {
+    height: 700px;
+  }
+  .why .why__media {
+    width: 460px;
+    margin: 0 auto;
+  }
+  .why .why__col {
+    display: block;
+  }
+  .why .why__col-left {
+    float: left;
+    margin-right: 30px;
+  }
+  .why .why__col-img {
+    display: none;
+  }
+  .why .why__col-right {
+    float: left;
+  }
+  .slick-prev {
+    left: -20%;
+  }
+  .slick-next {
+    right: -10%;
+  }
+}
+@media screen and (max-width: 794px) {
+  .row {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .first_screen .dots {
+    float: none;
+    position: relative;
+    top: 370px;
+    right: 0;
+    width: 100px;
+    margin: 0 auto;
+    display: block;
+  }
+  .first_screen .dots ul > li {
+    display: inline;
+  }
+  .first_screen .content_screen p {
+    padding: 0 35px;
+  }
+  .mosaic .mosaic_desc,
+  .mosaic .mosaic_img {
+    width: 100%;
+  }
+  .mosaic .mosaic_desc__about_header,
+  .mosaic .mosaic_desc__cust_header {
+    padding: 5% 0 15px;
+  }
+  .swap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .slider .slider_content__img-name {
+    padding: 0 0 50px;
+  }
+  .slick-prev {
+    top: 90%;
+    left: 20%;
+    z-index: 9999;
+  }
+  .slick-next {
+    top: 90%;
+    right: 25%;
+    z-index: 9999;
+  }
+}
+@media screen and (max-width: 674px) {
+  .row {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 645px) {
+  .find .row {
+    width: 225px;
+    margin: 0 auto;
+  }
+  .mosaic .mosaic_desc .none {
+    padding-top: 20%;
+  }
+  .mosaic.mosaic_desc__text-rev {
+    padding: 20px 100px;
+  }
+  .why {
+    height: 1180px;
+  }
+  .why .why__col-left {
+    float: none;
+    margin-right: 0;
+  }
+  .why .why__media {
+    width: 215px;
+  }
+  .first_screen .content_screen {
+    top: 145px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .first_screen .dots {
+    top: 330px;
+  }
+  form {
+    width: 300px;
+  }
+  form input {
+    width: 160px;
+  }
+  form button {
+    font-size: 16px;
+    width: 100px;
+    padding: 17px 20px;
+  }
+  .footer__copyright p {
+    text-align: center;
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 380px) {
+  .mosaic .mosaic_desc__text-rev {
+    padding: 20px 30px;
+  }
+  .first_screen .content_screen h1 {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .first_screen .dots {
+    top: 250px;
+  }
+  .footer__copyright p {
+    font-size: 13px;
+  }
+}
