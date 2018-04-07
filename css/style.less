@@ -62,6 +62,48 @@
     display: table;
     clear: both;
 }
+form {
+    display: block;
+    margin: 0 auto;
+    width: 480px;
+    & input {
+        font-family: 'Yantramanav-Light';
+        font-size: 18px;
+        color: #8c8c8c;
+        width: 290px;
+        height: 25px;
+        padding: 15px 20px;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        border: none;
+        outline: none;
+        float: left;
+    }
+    & button {
+        font-family: 'Nunito-Regular';
+        font-size: 20px;
+        background-color: #20ab50;
+        color: #fff;
+        width: 150px;
+        padding: 14px 20px;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        border: none;
+        outline: none;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+.row {
+    position: relative;
+    margin: 0 auto;
+    width: 85%;
+}
 .first_screen {
     background-image: url(../img/bg_first_screen.jpg);
     background-position: center center;
@@ -94,39 +136,6 @@
             color: #fff;
             text-shadow: 2px 2px 2px #000;
             margin-bottom: 60px;
-        }
-        & form {
-            display: block;
-            margin: 0 auto;
-            width: 480px;
-            & input {
-                font-family: 'Yantramanav-Light';
-                font-size: 18px;
-                color: #8c8c8c;
-                width: 290px;
-                height: 25px;
-                padding: 15px 20px;
-                border-top-left-radius: 30px;
-                border-bottom-left-radius: 30px;
-                border: none;
-                outline: none;
-                float: left;
-            }
-            & button {
-                font-family: 'Nunito-Regular';
-                font-size: 20px;
-                background-color: #20ab50;
-                color: #fff;
-                width: 150px;
-                padding: 14px 20px;
-                border-top-right-radius: 30px;
-                border-bottom-right-radius: 30px;
-                border: none;
-                outline: none;
-                &:hover {
-                    cursor: pointer;
-                }
-            }
         }
     }
     & .dots {
@@ -187,6 +196,10 @@
         &__text-name {
             font-size: 18px;
         }
+        & .none {
+            padding-top: 30%;
+            padding-bottom: 10%;
+        }
     }
     & .mosaic_img {
         & img {
@@ -211,21 +224,166 @@
         max-width: 440px;
         margin: 0 auto;
         position: relative;
-        top: 160px;
+        top: 60px;
         &__img {
             outline: none;
+            & img {
+                max-width: 100%;
+                height: auto;
+            }
             &-name {
                 font-family: 'Nunito-Light';
                 font-size: 24px;
                 text-align: center;
                 text-transform: uppercase;
-                padding: 140px 0 30px;
+                padding: 80px 0 50px;
             }
             &-count {
                 font-family: 'Yantramanav-Thin';
                 font-size: 18px;
                 text-align: center;
             }
+        }
+    }
+}
+.why {
+    background-color: #e1e0e1;
+    padding-bottom: 50px;
+    margin-top: 90px;
+    margin-bottom: 50px;
+    & h2 {
+        font-family: 'Nunito-Light';
+        font-size: 30px;
+        text-align: center;
+        padding: 50px 0 20px;
+    }
+    & p {
+        font-family: 'Yantramanav-Thin';
+        font-size: 18px;
+        text-align: center;
+    }
+    &_desc {
+        width: 195px;
+        margin: 10px 0;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 10px;
+        & h3 {
+            font-family: 'Yantramanav-Regular';
+            font-size: 16px;
+            text-align: left;
+        }
+        & p {
+            font-size: 15px;
+            text-align: left;
+        }
+    }
+    &__col {
+        display: inline-block;
+        vertical-align: top;
+        &-img {
+            position: absolute;
+            top: 30px;
+            & img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+        &-right {
+            float: right;
+        }
+    }
+}
+.find {
+    & h2 {
+        font-family: 'Nunito-Light';
+        font-size: 30px;
+        text-align: center;
+        padding-bottom: 10px;     
+    }
+    &__bottom_header {
+        font-size: 24px;
+    }
+    & p, & a {
+        font-family: 'Yantramanav-Thin';
+        font-size: 18px;
+        text-align: center;
+    }
+    &__sub {
+        padding-bottom: 75px;
+        &-bottom {
+            padding-bottom: 30px;
+        }
+    }
+    & .find_container {
+        width: 125px;
+        margin: 0 auto;
+        float: left;
+        padding: 0 50px 55px;
+        & h3 {
+            font-family: 'Yantramanav-Regular';
+            font-size: 16px;
+            padding-bottom: 10px;
+        }
+        & p, & a {
+            font-size: 15px;
+            text-align: left;
+            padding: 1px 0;
+        }
+        & a {
+            padding-top: 10px;
+            color: #1faa50;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    &__contacts {
+        width: 300px;
+        margin: 0 auto;
+        padding-bottom: 80px;
+        & a:first-child {
+            text-decoration: none;
+            color: #1faa50;
+            float: left;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        & a:last-child {
+            float: right;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+.footer {
+    background-color: #f3f3f3;
+    padding-top: 130px;
+    & h2 {
+        font-family: 'Nunito-Light';
+        font-size: 30px;
+        text-align: center;
+    }
+    & p {
+        font-family: 'Yantramanav-Light';
+        font-size: 22px;
+        text-align: center;
+    }
+    & form {
+        padding: 50px 0 110px;
+    }
+    &__copyright {
+        background-color: #dcdcdc;
+        & p {
+            font-family: 'Yantramanav-Regular';
+            font-size: 14px;
+            text-align: left;
+            color: #fff;
+            padding: 10px 0;
+            padding-left: 35px;
         }
     }
 }
